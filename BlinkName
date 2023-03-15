@@ -4,17 +4,23 @@ bool tryBlinking = false;
 
 SYSTEM_THREAD(ENABLED);
 
-void setup() {
-  pinMode(MY_LED, OUTPUT);
-  pinMode(MY_BUTTON, INPUT_PULLUP);
+void setup()
+{
+  pinMode( MY_BUTTON ,INPUT_PULLUP); 
+  pinMode( MY_LED , OUTPUT ); 
 }
 
-void loop() {
-  if (digitalRead(MY_BUTTON) == LOW) {
-    if (!tryBlinking) {
-      tryBlinking = true;
-    {
-        digitalWrite(MY_LED, HIGH);
+
+
+void loop()
+{
+   int buttonState = digitalRead( MY_BUTTON );
+  if( buttonState == HIGH )
+  { 
+      if(!tryBlinking){
+          tryBlinking = true;
+      
+     {digitalWrite(MY_LED, HIGH);
         delay(250ms);
         digitalWrite(MY_LED, LOW);
         delay(250ms);
@@ -175,9 +181,15 @@ void loop() {
     	digitalWrite(MY_LED, LOW);
     	delay(2s);
     	//first name U
-      }
-    }
-  } else {
+    	
+    
+   }
+  }}
+  else{
     tryBlinking = false;
+    digitalWrite( MY_LED, LOW);
+    
   }
+
+
 }
