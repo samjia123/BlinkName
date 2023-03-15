@@ -1,0 +1,183 @@
+const pin_t MY_LED = D7;
+const pin_t MY_BUTTON = D6;
+bool tryBlinking = false;
+
+SYSTEM_THREAD(ENABLED);
+
+void setup() {
+  pinMode(MY_LED, OUTPUT);
+  pinMode(MY_BUTTON, INPUT_PULLUP);
+}
+
+void loop() {
+  if (digitalRead(MY_BUTTON) == LOW) {
+    if (!tryBlinking) {
+      tryBlinking = true;
+    {
+        digitalWrite(MY_LED, HIGH);
+        delay(250ms);
+        digitalWrite(MY_LED, LOW);
+        delay(250ms);
+    
+        digitalWrite(MY_LED, HIGH);
+        delay(250ms);
+    	digitalWrite(MY_LED, LOW);
+    	delay(250ms);
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(2s);
+    	digitalWrite(MY_LED, LOW);
+    	delay(2s);
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(250ms);
+    	digitalWrite(MY_LED, LOW);
+    	delay(250ms);
+    	//first name F
+    	
+    	digitalWrite(MY_LED, LOW);
+    	delay(3s);
+    	//gap of each character 
+    	
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(250ms);
+    	digitalWrite(MY_LED, LOW);
+    	delay(250ms);
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(2s);
+    	digitalWrite(MY_LED, LOW);
+    	delay(2s);
+    	//first name A
+    	
+    	digitalWrite(MY_LED, LOW);
+    	delay(3s);
+    	//gap of each character 
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(2s);
+    	digitalWrite(MY_LED, LOW);
+    	delay(2s);
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(250ms);
+    	digitalWrite(MY_LED, LOW);
+    	delay(250ms);
+    	//first name N
+    	
+    	digitalWrite(MY_LED, LOW);
+    	delay(3s);
+    	//gap of each character 
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(2s);
+    	digitalWrite(MY_LED, LOW);
+    	delay(2s);
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(2s);
+    	digitalWrite(MY_LED, LOW);
+    	delay(2s);
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(250ms);
+    	digitalWrite(MY_LED, LOW);
+    	delay(250ms);
+    	//first name G
+    	
+    	digitalWrite(MY_LED, LOW);
+    	delay(3s);
+    	//gap of each character 
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(2s);
+    	digitalWrite(MY_LED, LOW);
+    	delay(2s);
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(2s);
+    	digitalWrite(MY_LED, LOW);
+    	delay(2s);
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(250ms);
+    	digitalWrite(MY_LED, LOW);
+    	delay(250ms);
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(250ms);
+    	digitalWrite(MY_LED, LOW);
+    	delay(250ms);
+    	//first name Z
+    	
+    	digitalWrite(MY_LED, LOW);
+    	delay(3s);
+    	//gap of each character 
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(250ms);
+    	digitalWrite(MY_LED, LOW);
+    	delay(250ms);
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(250ms);
+    	digitalWrite(MY_LED, LOW);
+    	delay(250ms);
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(250ms);
+    	digitalWrite(MY_LED, LOW);
+    	delay(250ms);
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(250ms);
+    	digitalWrite(MY_LED, LOW);
+    	delay(250ms);
+    	//first name H
+    	
+    	digitalWrite(MY_LED, LOW);
+    	delay(3s);
+    	//gap of each character 
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(2s);
+    	digitalWrite(MY_LED, LOW);
+    	delay(2s);
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(2s);
+    	digitalWrite(MY_LED, LOW);
+    	delay(2s);
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(2s);
+    	digitalWrite(MY_LED, LOW);
+    	delay(2s);
+    	//first name O
+    	
+    	digitalWrite(MY_LED, LOW);
+    	delay(3s);
+    	//gap of each character 
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(250ms);
+    	digitalWrite(MY_LED, LOW);
+    	delay(250ms);
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(250ms);
+    	digitalWrite(MY_LED, LOW);
+    	delay(250ms);
+    	
+    	digitalWrite(MY_LED, HIGH);
+        delay(2s);
+    	digitalWrite(MY_LED, LOW);
+    	delay(2s);
+    	//first name U
+      }
+    }
+  } else {
+    tryBlinking = false;
+  }
+}
