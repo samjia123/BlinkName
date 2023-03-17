@@ -194,7 +194,7 @@ void loop()
   }}
   else{
     tryBlink = false;
-    digitalWrite( MY_LED, LOW)
+    digitalWrite( MY_LED, LOW);
     
   }
 
