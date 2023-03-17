@@ -14,9 +14,10 @@ void setup()
 
 void loop()
 {
-   int buttonState = digitalRead( MY_BUTTON );
+   int buttonStatus = digitalRead( MY_BUTTON );
+   //控制按键状态
    bool tryBlink = false;
-  if( buttonState == HIGH &!tryBlink )
+  if( buttonStatus == HIGH &!tryBlink )
   { 
           tryBlink = true;
       
@@ -43,7 +44,8 @@ void loop()
     	
     	digitalWrite(MY_LED, LOW);
     	delay(3s);
-    	//gap of each character 
+    	//gap of each letter
+    	//隔断
     	
     	
     	digitalWrite(MY_LED, HIGH);
@@ -59,7 +61,8 @@ void loop()
     	
     	digitalWrite(MY_LED, LOW);
     	delay(3s);
-    	//gap of each character 
+    	//gap of each letter
+    	//隔断 
     	
     	digitalWrite(MY_LED, HIGH);
         delay(2s);
@@ -74,7 +77,8 @@ void loop()
     	
     	digitalWrite(MY_LED, LOW);
     	delay(3s);
-    	//gap of each character 
+    	//gap of each letter
+    	//隔断
     	
     	digitalWrite(MY_LED, HIGH);
         delay(2s);
@@ -94,7 +98,8 @@ void loop()
     	
     	digitalWrite(MY_LED, LOW);
     	delay(3s);
-    	//gap of each character 
+    	//gap of each letter
+    	//隔断 
     	
     	digitalWrite(MY_LED, HIGH);
         delay(2s);
@@ -119,7 +124,8 @@ void loop()
     	
     	digitalWrite(MY_LED, LOW);
     	delay(3s);
-    	//gap of each character 
+    	//gap of each letter
+    	//隔断
     	
     	digitalWrite(MY_LED, HIGH);
         delay(250ms);
@@ -144,7 +150,8 @@ void loop()
     	
     	digitalWrite(MY_LED, LOW);
     	delay(3s);
-    	//gap of each character 
+    	//gap of each letter
+    	//隔断 
     	
     	digitalWrite(MY_LED, HIGH);
         delay(2s);
@@ -164,7 +171,8 @@ void loop()
     	
     	digitalWrite(MY_LED, LOW);
     	delay(3s);
-    	//gap of each character 
+    	//gap of each letter
+    	//隔断 
     	
     	digitalWrite(MY_LED, HIGH);
         delay(250ms);
@@ -186,7 +194,7 @@ void loop()
   }}
   else{
     tryBlink = false;
-    digitalWrite( MY_LED, LOW);
+    digitalWrite( MY_LED, LOW)
     
   }
 
